@@ -1,31 +1,26 @@
 var result;
 const inputResult = document.getElementById("inputResult");
-const inputUnit = document.getElementById("unit");
 
 function changeUnit(value){
-    switch(value){
+    switch(value.value){
         case "km-miles":
-            inputUnit.value="km";
+            document.getElementById("unit").value="km";
         break;
         case "miles-km":
-            inputUnit.value="miles";
+            document.getElementById("unit").value="miles";
         break;
         case "foot-m":
-            inputUnit.value="foot";
+            document.getElementById("unit").value="foot";
         break;
         case "m-foot":
-            inputUnit.value="m";
+            document.getElementById("unit").value="m";
         break;
         case "cm-inch":
-            inputUnit.value="cm";
+            document.getElementById("unit").value="cm";
         break;
         case "inch-cm":
-            inputUnit.value="inch";
+            document.getElementById("unit").value="inch";
         break;
-        default:
-            inputUnit.value="=";
-
-
     }
 }
 
