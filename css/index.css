@@ -1,3 +1,4 @@
+/*styles of header*/
 header{
     position: absolute;
     top: 0;
@@ -9,6 +10,7 @@ header{
     font-weight: bold;
 }
 
+/*styles of container #main and his content*/
 #main{
     display: flex;
     justify-content: center;
@@ -16,20 +18,50 @@ header{
     margin-top: 4%;
 }
 
+input{
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    background-color: #2E0039;
+    margin-bottom: 3%;
+}
+
+select{
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    background-color: #2E0039;
+    width: 30%;
+    margin-right: 1%;
+}
+
+
 #converter{
     background-color: #2E0039;
     color: white;
-    padding: 1% 2% 1% 1%;
+    padding: 1%;
+    padding-bottom: 2%;
     border: 5px solid #2E0039;
     border-radius: 15%;
-    width: 50%;
+    width: 25%;
     display: block;
 }
 
 #unit{
     text-align: right;
+    border: none;
 }
 
+#quantity{
+    text-align: right;
+    margin-left: 15%;
+}
+
+#inputResult{
+    margin-left: 58%;
+    border: none;
+}
+/*styles of footer and his content*/
 footer{
     position: absolute;
     bottom: 0;
