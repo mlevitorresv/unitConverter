@@ -9,7 +9,7 @@
     <title>unit converter</title>
 </head>
 <body>
-    <header id="head">unit converter</header>
+    <header id="head"><i class="fi fi-rr-exchange"></i> unit converter</header>
     <main id="main">
         <div id="converter">
             <h3>convert</h3>
@@ -22,7 +22,9 @@
                 <option value="inch-cm">inch-cm</option>
             </select>
             <i class="fi fi-rr-exchange"></i>
-            <input type="number" name="quantity" id="quantity">
+            <input type="number" name="quantity" id="quantity" onchange="convert()">
+            <input type="text" id="unit" size="6">
+            <br>
             <i class="fi fi-rr-heart"></i>
             <input type="text" name="result" id="inputResult" disabled="true">
         </div>

@@ -1,13 +1,47 @@
 header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+
+    padding-top: 1%;
     color: #2E0039;
     font-weight: bold;
 }
 
-main{
-    text-align: center;
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+
+#converter{
+    background-color: #2E0039;
+    color: white;
+    padding: 1% 2% 1% 1%;
+    border: 5px solid #2E0039;
+    border-radius: 15%;
+    width: 50%;
+    display: block;
+}
+
+#unit{
+    text-align: right;
 }
 
 footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    margin-bottom: 0%;
+
+    background-color: #2E0039;
+    padding: 1%;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    margin: 2%;
 }
