@@ -8,12 +8,12 @@
     <script src="../js/index.js"></script>
     <title>unit converter</title>
 </head>
-<body>
+<body onload="changeUnit()">
     <header id="head"><i class="fi fi-rr-exchange"></i> unit converter</header>
     <main id="main">
         <div id="converter">
             <h3>convert</h3>
-            <select name="units" id="unitsSelector" onchange="changeUnit(this)">
+            <select name="units" id="unitsSelector" onchange="changeUnit()">
                 <option value="km-miles">km-miles</option>
                 <option value="miles-km">miles-km</option>
                 <option value="foot-m">foot-m</option>
@@ -21,15 +21,16 @@
                 <option value="cm-inch">cm-inch</option>
                 <option value="inch-cm">inch-cm</option>
             </select>
-            <i class="fi fi-rr-exchange"></i>
+            <button id="buttonChange" onclick="exchangeUnits()"><i class="fi fi-rr-exchange"></i></button>
             <input type="number" name="quantity" id="quantity" onchange="convert()">
             <input type="text" id="unit" size="2" disabled="true">
             <br>
-            <i class="fi fi-rr-heart"></i>
+            <i class="fi fi-rr-heart" id="iconHeart" onclick="save()"></i>
             <input type="text" name="result" id="inputResult" disabled="true">
+            <input type="text" id="inputResultUnit" size="2">
         </div>
         <div id="saved">
-            <h6>saved</h6>
+            <h5>saved</h5>
         </div>
     </main>
     <footer id="foot">
